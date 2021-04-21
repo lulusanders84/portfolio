@@ -27,21 +27,21 @@ export default function Project({project, expand}) {
   return (
     <li class="js-project project">
       <section class="js-project-title project-title" onClick={handleProjectTitleClick}>
-        <img className={arrowClassName} src="/images/arrow.png" alt='expand/collapse item' />
+        <img className={arrowClassName} src="./images/arrow.png" alt='expand/collapse item' />
         <h3>{project.title}</h3>
         <a href={"https://github.com/lulusanders84/" + project.repoUrl} target="blank">
-          <img title="Github Repo" src="/images/github-logo.png" alt="Github" />
+          <img title="Github Repo" src="./images/github-logo.png" alt="Github" />
         </a>
         {project.demoUrl 
           ? <a href={project.demoUrl} target="blank">
-              <img title="Demo project" src="/images/demo.png" alt="Demo" />
+              <img title="Demo project" src="./images/demo.png" alt="Demo" />
             </a>
           : null
         }
       </section>
       <section className={detailsClassName}>
         <a href={`${project.demoUrl}`} target="blank">
-          <img class="screenshot" src={`/images/${project.img}.png`} alt="App Screenshot" />
+          <img class="screenshot" src={`./images/${project.img}.png`} alt="App Screenshot" />
         </a>
         <p>
           {project.description}

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Header heading="Lucy Sanders" imageSrc="/images/headshot.png" alt="bitmoji headshot" />
+      <Header heading="Lucy Sanders" imageSrc="./images/headshot.png" alt="bitmoji headshot" />
       <main role="main">
         <Bio>
           <p>Hi, my name is Lucy. I am a fullstack developer with a passion for solving problems creatively.</p>
