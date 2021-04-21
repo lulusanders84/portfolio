@@ -12,7 +12,7 @@ export default function TechStack({stack}) {
     return (
     <li>
       <a href={tech.url} target="blank">
-        <img title={tech.name} src={`/images/${tech.src}`} alt={tech.name} />
+        <img title={tech.name} src={`%PUBLIC_URL%/images/${tech.src}`} alt={tech.name} />
       </a>
     </li>
     );
